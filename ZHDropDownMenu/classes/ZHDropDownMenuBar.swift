@@ -12,6 +12,12 @@ fileprivate let ITEM_DEFAULT_MARGIN: CGFloat = 1
 
 class ZHDropDownMenuBar: UIView {
     
+    
+    var showSubListBlock: ((_ item: ZHDropMenuItem) -> Void)?
+    
+    private var activeCell: ZHDropMenuItemCell!
+    
+    var config: ZHDropDownMenuConfig!
     var itemCountPerPage: CGFloat = 3
     
     var items: [ZHDropMenuItem] = [ZHDropMenuItem]() {
@@ -19,6 +25,8 @@ class ZHDropDownMenuBar: UIView {
             collectionView.reloadData()
         }
     }
+    
+    var cells: [ZHDropMenuItemCell] = [ZHDropMenuItemCell]()
     
     
     lazy var layout: UICollectionViewFlowLayout = {
@@ -61,28 +69,70 @@ extension ZHDropDownMenuBar: UICollectionViewDataSource, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ZHDropMenuItemCell
-        cell.contentView.backgroundColor = UIColor.brown
-        let item = items[indexPath.row]
-        cell.titleLabel.text = item.title
-        return cell
+        
+        if cells.count > indexPath.row {
+           let cell = cells[indexPath.row]
+            return cell
+        }else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ZHDropMenuItemCell
+            cell.contentView.backgroundColor = UIColor.brown
+            let item = items[indexPath.row]
+            cell.item = item
+            cell.actionBlock = { (item,cell) in
+                if self.activeCell == nil || cell == self.activeCell {
+                    cell.actionButton.isSelected = !cell.actionButton.isSelected
+                    self.activeCell = cell
+                }else {
+                    if self.activeCell.actionButton.isSelected {
+                        return
+                    }
+                    cell.actionButton.isSelected = !cell.actionButton.isSelected
+                    self.activeCell = cell
+                }
+                
+                //显示菜单
+                self.showSubListBlock?(item)
+            }
+            return cell
+        }
     }
-    
-    
     
 }
 
 
 class ZHDropMenuItemCell: UICollectionViewCell {
     
-    lazy var titleLabel: UILabel = {
-        let label = UILabel()
+    
+    var actionBlock: ((_ item: ZHDropMenuItem,_ cell: ZHDropMenuItemCell) -> Void)?
+    
+    var item: ZHDropMenuItem! {
+        didSet {
+            actionButton.setTitle(item.title, for: .normal)
+            actionButton.setTitle(item.title, for: .selected)
+        }
+    }
+    
+    var showItem: ZHDropMenuItem! {
+        didSet {
+            actionButton.setTitle(showItem.title, for: .normal)
+            actionButton.setTitle(showItem.title, for: .selected)
+        }
+    }
+    
+    lazy var actionButton: UIButton = {
+        let label = UIButton(type: .custom)
+        label.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.right
+        label.setTitleColor(UIColor.black, for: .normal)
+        label.setTitleColor(UIColor.red, for: .selected)
+        label.setImage(UIImage(named: ""), for: .normal)
+        label.setImage(UIImage(named: ""), for: .selected)
+        label.addTarget(self, action: #selector(actionBtnClicked(sender:)), for: .touchUpInside)
         return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.addSubview(titleLabel)
+        contentView.addSubview(actionButton)
         
     }
     
@@ -92,9 +142,14 @@ class ZHDropMenuItemCell: UICollectionViewCell {
         
     }
     
+    @objc private func actionBtnClicked(sender: UIButton) {
+        actionBlock?(item,self)
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
-        titleLabel.frame = contentView.bounds
+        actionButton.sizeToFit()
+        actionButton.center = self.contentView.center
         
     }
 }

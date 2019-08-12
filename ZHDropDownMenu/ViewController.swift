@@ -21,7 +21,15 @@ class ViewController: UIViewController {
             item.subItems = [ZHDropMenuItem]()
             for j in 1...6 {
                 let subItem = ZHDropMenuItem()
-                subItem.title = "二级菜单-\(j)"
+                subItem.subItems = [ZHDropMenuItem]()
+                subItem.title = "二级菜单-\(i)-\(j)"
+                
+                for m in 1...6 {
+                    let temp = ZHDropMenuItem()
+                    temp.title = "三级菜单-\(j)-\(m)"
+                    subItem.subItems?.append(temp)
+                }
+                
                 item.subItems?.append(subItem)
             }
             items.append(item)
