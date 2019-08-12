@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8527A2882300F71A0040DB19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527A2872300F71A0040DB19 /* AppDelegate.swift */; };
+		8527A28A2300F71A0040DB19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527A2892300F71A0040DB19 /* ViewController.swift */; };
+		8527A28D2300F71A0040DB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8527A28B2300F71A0040DB19 /* Main.storyboard */; };
+		8527A28F2300F71E0040DB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8527A28E2300F71E0040DB19 /* Assets.xcassets */; };
+		8527A2922300F71E0040DB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8527A2902300F71E0040DB19 /* LaunchScreen.storyboard */; };
+		8527A29D2300F71F0040DB19 /* ZHDropDownMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527A29C2300F71F0040DB19 /* ZHDropDownMenuTests.swift */; };
+		8527A2A82300F71F0040DB19 /* ZHDropDownMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527A2A72300F71F0040DB19 /* ZHDropDownMenuUITests.swift */; };
+		8527A2B72300F77A0040DB19 /* ZHDropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527A2B62300F77A0040DB19 /* ZHDropDownMenuView.swift */; };
+		8527A2B92300F7DC0040DB19 /* ZHDropMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527A2B82300F7DC0040DB19 /* ZHDropMenuItem.swift */; };
+		8527A2BB2300F9B50040DB19 /* ZHDropDownMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527A2BA2300F9B50040DB19 /* ZHDropDownMenuBar.swift */; };
+		8527A2F723016F4B0040DB19 /* ZHMenuActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527A2F623016F4B0040DB19 /* ZHMenuActionButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8527A2992300F71F0040DB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8527A27C2300F71A0040DB19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8527A2832300F71A0040DB19;
+			remoteInfo = ZHDropDownMenu;
+		};
+		8527A2A42300F71F0040DB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8527A27C2300F71A0040DB19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8527A2832300F71A0040DB19;
+			remoteInfo = ZHDropDownMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8527A2842300F71A0040DB19 /* ZHDropDownMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHDropDownMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8527A2872300F71A0040DB19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8527A2892300F71A0040DB19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8527A28C2300F71A0040DB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8527A28E2300F71E0040DB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8527A2912300F71E0040DB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8527A2932300F71E0040DB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8527A2982300F71F0040DB19 /* ZHDropDownMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHDropDownMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8527A29C2300F71F0040DB19 /* ZHDropDownMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHDropDownMenuTests.swift; sourceTree = "<group>"; };
+		8527A29E2300F71F0040DB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8527A2A32300F71F0040DB19 /* ZHDropDownMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHDropDownMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8527A2A72300F71F0040DB19 /* ZHDropDownMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHDropDownMenuUITests.swift; sourceTree = "<group>"; };
+		8527A2A92300F71F0040DB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8527A2B62300F77A0040DB19 /* ZHDropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHDropDownMenuView.swift; sourceTree = "<group>"; };
+		8527A2B82300F7DC0040DB19 /* ZHDropMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHDropMenuItem.swift; sourceTree = "<group>"; };
+		8527A2BA2300F9B50040DB19 /* ZHDropDownMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHDropDownMenuBar.swift; sourceTree = "<group>"; };
+		8527A2F623016F4B0040DB19 /* ZHMenuActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHMenuActionButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8527A2812300F71A0040DB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8527A2952300F71F0040DB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8527A2A02300F71F0040DB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8527A27B2300F71A0040DB19 = {
+			isa = PBXGroup;
+			children = (
+				8527A2862300F71A0040DB19 /* ZHDropDownMenu */,
+				8527A29B2300F71F0040DB19 /* ZHDropDownMenuTests */,
+				8527A2A62300F71F0040DB19 /* ZHDropDownMenuUITests */,
+				8527A2852300F71A0040DB19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8527A2852300F71A0040DB19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8527A2842300F71A0040DB19 /* ZHDropDownMenu.app */,
+				8527A2982300F71F0040DB19 /* ZHDropDownMenuTests.xctest */,
+				8527A2A32300F71F0040DB19 /* ZHDropDownMenuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8527A2862300F71A0040DB19 /* ZHDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8527A2B52300F74E0040DB19 /* classes */,
+				8527A2872300F71A0040DB19 /* AppDelegate.swift */,
+				8527A2892300F71A0040DB19 /* ViewController.swift */,
+				8527A28B2300F71A0040DB19 /* Main.storyboard */,
+				8527A28E2300F71E0040DB19 /* Assets.xcassets */,
+				8527A2902300F71E0040DB19 /* LaunchScreen.storyboard */,
+				8527A2932300F71E0040DB19 /* Info.plist */,
+			);
+			path = ZHDropDownMenu;
+			sourceTree = "<group>";
+		};
+		8527A29B2300F71F0040DB19 /* ZHDropDownMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				8527A29C2300F71F0040DB19 /* ZHDropDownMenuTests.swift */,
+				8527A29E2300F71F0040DB19 /* Info.plist */,
+			);
+			path = ZHDropDownMenuTests;
+			sourceTree = "<group>";
+		};
+		8527A2A62300F71F0040DB19 /* ZHDropDownMenuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8527A2A72300F71F0040DB19 /* ZHDropDownMenuUITests.swift */,
+				8527A2A92300F71F0040DB19 /* Info.plist */,
+			);
+			path = ZHDropDownMenuUITests;
+			sourceTree = "<group>";
+		};
+		8527A2B52300F74E0040DB19 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				8527A2B62300F77A0040DB19 /* ZHDropDownMenuView.swift */,
+				8527A2BA2300F9B50040DB19 /* ZHDropDownMenuBar.swift */,
+				8527A2B82300F7DC0040DB19 /* ZHDropMenuItem.swift */,
+				8527A2F623016F4B0040DB19 /* ZHMenuActionButton.swift */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8527A2832300F71A0040DB19 /* ZHDropDownMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8527A2AC2300F71F0040DB19 /* Build configuration list for PBXNativeTarget "ZHDropDownMenu" */;
+			buildPhases = (
+				8527A2802300F71A0040DB19 /* Sources */,
+				8527A2812300F71A0040DB19 /* Frameworks */,
+				8527A2822300F71A0040DB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZHDropDownMenu;
+			productName = ZHDropDownMenu;
+			productReference = 8527A2842300F71A0040DB19 /* ZHDropDownMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8527A2972300F71F0040DB19 /* ZHDropDownMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8527A2AF2300F71F0040DB19 /* Build configuration list for PBXNativeTarget "ZHDropDownMenuTests" */;
+			buildPhases = (
+				8527A2942300F71F0040DB19 /* Sources */,
+				8527A2952300F71F0040DB19 /* Frameworks */,
+				8527A2962300F71F0040DB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8527A29A2300F71F0040DB19 /* PBXTargetDependency */,
+			);
+			name = ZHDropDownMenuTests;
+			productName = ZHDropDownMenuTests;
+			productReference = 8527A2982300F71F0040DB19 /* ZHDropDownMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8527A2A22300F71F0040DB19 /* ZHDropDownMenuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8527A2B22300F71F0040DB19 /* Build configuration list for PBXNativeTarget "ZHDropDownMenuUITests" */;
+			buildPhases = (
+				8527A29F2300F71F0040DB19 /* Sources */,
+				8527A2A02300F71F0040DB19 /* Frameworks */,
+				8527A2A12300F71F0040DB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8527A2A52300F71F0040DB19 /* PBXTargetDependency */,
+			);
+			name = ZHDropDownMenuUITests;
+			productName = ZHDropDownMenuUITests;
+			productReference = 8527A2A32300F71F0040DB19 /* ZHDropDownMenuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8527A27C2300F71A0040DB19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = zhany;
+				TargetAttributes = {
+					8527A2832300F71A0040DB19 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					8527A2972300F71F0040DB19 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 8527A2832300F71A0040DB19;
+					};
+					8527A2A22300F71F0040DB19 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 8527A2832300F71A0040DB19;
+					};
+				};
+			};
+			buildConfigurationList = 8527A27F2300F71A0040DB19 /* Build configuration list for PBXProject "ZHDropDownMenu" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8527A27B2300F71A0040DB19;
+			productRefGroup = 8527A2852300F71A0040DB19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8527A2832300F71A0040DB19 /* ZHDropDownMenu */,
+				8527A2972300F71F0040DB19 /* ZHDropDownMenuTests */,
+				8527A2A22300F71F0040DB19 /* ZHDropDownMenuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8527A2822300F71A0040DB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8527A2922300F71E0040DB19 /* LaunchScreen.storyboard in Resources */,
+				8527A28F2300F71E0040DB19 /* Assets.xcassets in Resources */,
+				8527A28D2300F71A0040DB19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8527A2962300F71F0040DB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8527A2A12300F71F0040DB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8527A2802300F71A0040DB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8527A2B92300F7DC0040DB19 /* ZHDropMenuItem.swift in Sources */,
+				8527A28A2300F71A0040DB19 /* ViewController.swift in Sources */,
+				8527A2F723016F4B0040DB19 /* ZHMenuActionButton.swift in Sources */,
+				8527A2BB2300F9B50040DB19 /* ZHDropDownMenuBar.swift in Sources */,
+				8527A2882300F71A0040DB19 /* AppDelegate.swift in Sources */,
+				8527A2B72300F77A0040DB19 /* ZHDropDownMenuView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8527A2942300F71F0040DB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8527A29D2300F71F0040DB19 /* ZHDropDownMenuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8527A29F2300F71F0040DB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8527A2A82300F71F0040DB19 /* ZHDropDownMenuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8527A29A2300F71F0040DB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8527A2832300F71A0040DB19 /* ZHDropDownMenu */;
+			targetProxy = 8527A2992300F71F0040DB19 /* PBXContainerItemProxy */;
+		};
+		8527A2A52300F71F0040DB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8527A2832300F71A0040DB19 /* ZHDropDownMenu */;
+			targetProxy = 8527A2A42300F71F0040DB19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8527A28B2300F71A0040DB19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8527A28C2300F71A0040DB19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8527A2902300F71E0040DB19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8527A2912300F71E0040DB19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8527A2AA2300F71F0040DB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8527A2AB2300F71F0040DB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8527A2AD2300F71F0040DB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZHDropDownMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhany.ZHDropDownMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8527A2AE2300F71F0040DB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZHDropDownMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhany.ZHDropDownMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8527A2B02300F71F0040DB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZHDropDownMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhany.ZHDropDownMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHDropDownMenu.app/ZHDropDownMenu";
+			};
+			name = Debug;
+		};
+		8527A2B12300F71F0040DB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZHDropDownMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhany.ZHDropDownMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHDropDownMenu.app/ZHDropDownMenu";
+			};
+			name = Release;
+		};
+		8527A2B32300F71F0040DB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZHDropDownMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhany.ZHDropDownMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZHDropDownMenu;
+			};
+			name = Debug;
+		};
+		8527A2B42300F71F0040DB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZHDropDownMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhany.ZHDropDownMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZHDropDownMenu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8527A27F2300F71A0040DB19 /* Build configuration list for PBXProject "ZHDropDownMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8527A2AA2300F71F0040DB19 /* Debug */,
+				8527A2AB2300F71F0040DB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8527A2AC2300F71F0040DB19 /* Build configuration list for PBXNativeTarget "ZHDropDownMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8527A2AD2300F71F0040DB19 /* Debug */,
+				8527A2AE2300F71F0040DB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8527A2AF2300F71F0040DB19 /* Build configuration list for PBXNativeTarget "ZHDropDownMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8527A2B02300F71F0040DB19 /* Debug */,
+				8527A2B12300F71F0040DB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8527A2B22300F71F0040DB19 /* Build configuration list for PBXNativeTarget "ZHDropDownMenuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8527A2B32300F71F0040DB19 /* Debug */,
+				8527A2B42300F71F0040DB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8527A27C2300F71A0040DB19 /* Project object */;
+}
